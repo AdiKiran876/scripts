@@ -22,7 +22,7 @@ monitor()
 	if [ $disk -gt $disk_thresh ]; then
                 echo "High Disk Usage Alert: $disk%. Check /dev/root FS and act upon it."
         fi
-	echo "-----------------------------------------------"
+	echo "-----------------------------------------------" >> system_metrics.log
 
 }
 monitor
